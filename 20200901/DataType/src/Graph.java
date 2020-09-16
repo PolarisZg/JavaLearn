@@ -10,10 +10,10 @@ class Circle implements shape{
         radius = r;
     }
     public double Area() {
-        return 3.14*radius*radius;
+        return 3.1415926*radius*radius;
     }
     public double Perimeter() {
-        return 2*3.14*radius;
+        return 2*3.1415926*radius;
     }
 }
 
@@ -48,7 +48,7 @@ public class Graph {
             case 1:
                 System.out.print("半径：");
                 Circle cricle = new Circle(scanner.nextDouble());
-                System.out.println("周长 = " + cricle.Perimeter() + "面积" + cricle.Area());
+                System.out.printf("周长 = %.3f, 面积 = %.3f",cricle.Perimeter(),cricle.Area());
                 break;
             case 2:
                 System.out.print("长：");
@@ -56,12 +56,12 @@ public class Graph {
                 System.out.print("宽：");
                 double w = scanner.nextDouble();
                 Rectangle rectangle = new Rectangle(w, h);
-                System.out.println("周长 = " + rectangle.Perimeter() + "面积" + rectangle.Area());
+                System.out.printf("周长 = %.3f, 面积 = %.3f",rectangle.Perimeter(),rectangle.Area());
                 break;
             case 3:
                 System.out.print("边长：");
                 Square square = new Square(scanner.nextDouble());
-                System.out.println("周长 = " + square.Perimeter() + "面积" + square.Area());
+                System.out.printf("周长 = %.3f, 面积 = %.3f",square.Perimeter(),square.Area());
                 break;
             default:
                 break;
