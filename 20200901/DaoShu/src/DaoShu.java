@@ -8,12 +8,12 @@ public class DaoShu {
         QiuDao(s.replace(" ","").toLowerCase());
     }
     public static void QiuDao(String DanXiangShi){
-        int locationPlus = Math.max(DanXiangShi.indexOf('+',0),DanXiangShi.indexOf('-',0));
+        int locationPlus = Math.max(DanXiangShi.indexOf('+'),DanXiangShi.indexOf('-'));
 //        System.out.println("locationPlus:" + locationPlus);
 //        System.out.println("DanXiangShi" + DanXiangShi);
         if(locationPlus == -1 || locationPlus == 0){
             locationPlus = DanXiangShi.length();
-            int locationX = DanXiangShi.indexOf('x',0);
+            int locationX = DanXiangShi.indexOf('x');
             if(locationX == -1){
                 System.out.printf("+ 0");
             }
@@ -24,7 +24,6 @@ public class DaoShu {
                 }
                 else
                     xiShu = 1;
-                /***********************************************************/
 //                System.out.println(xiShu);
                 int zhiShu = 1;
                 if(locationX < DanXiangShi.length() - 1) {
