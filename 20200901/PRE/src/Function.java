@@ -10,8 +10,9 @@ class FunctionGUI{
         jf = new JFrame();
         function = new JPanel();
         function.setLayout(new BorderLayout());
-        functionLeft = new JPanel();
         functionRight = new JPanel();
+        functionLeft = new JPanel();
+        functionRight.setBorder(BorderFactory.createTitledBorder("Function"));
         functionRight.setLayout(new GridLayout(1,3,2,2));
         functionRight.add(new JButton("Backspace"));
         functionRight.add(new JButton("CE"));
