@@ -2,7 +2,7 @@ import java.awt.*;
 import javax.swing.*;
 class CalculateMachineDemo{
     CalculateMachineDemo(){
-        JFrame jf = new JFrame();
+        JFrame jf = new JFrame("CalculateMachine");
         GridBagLayout gridBagLayout = new GridBagLayout();
         GridBagConstraints gridBagConstraints = new GridBagConstraints();
         jf.setLayout(gridBagLayout);
