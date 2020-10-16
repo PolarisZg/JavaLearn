@@ -68,6 +68,7 @@ public class ScoreGui {
     }
 
     public static void main(String [] args){
+
         new ScoreGui();
     }
 }
