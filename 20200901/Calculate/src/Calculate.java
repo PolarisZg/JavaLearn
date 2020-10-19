@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Objects;
 
 public class Calculate {
     JFrame jFrame;
@@ -91,64 +92,64 @@ public class Calculate {
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            if(e.getActionCommand() == "9"){
+            if(Objects.equals(e.getActionCommand(), "9")){
                 jTextField.setText(jTextField.getText() + "9");
             }
-            else if(e.getActionCommand() == "8"){
+            else if(Objects.equals(e.getActionCommand(), "8")){
                 jTextField.setText(jTextField.getText() + "8");
             }
-            else if(e.getActionCommand() == "7"){
+            else if(Objects.equals(e.getActionCommand(), "7")){
                 jTextField.setText(jTextField.getText() + "7");
             }
-            else if(e.getActionCommand() == "6"){
+            else if(Objects.equals(e.getActionCommand(), "6")){
                 jTextField.setText(jTextField.getText() + "6");
             }
-            else if(e.getActionCommand() == "5"){
+            else if(Objects.equals(e.getActionCommand(), "5")){
                 jTextField.setText(jTextField.getText() + "5");
             }
-            else if(e.getActionCommand() == "4"){
+            else if(Objects.equals(e.getActionCommand(), "4")){
                 jTextField.setText(jTextField.getText() + "4");
             }
-            else if(e.getActionCommand() == "3"){
+            else if(Objects.equals(e.getActionCommand(), "3")){
                 jTextField.setText(jTextField.getText() + "3");
             }
-            else if(e.getActionCommand() == "2"){
+            else if(Objects.equals(e.getActionCommand(), "2")){
                 jTextField.setText(jTextField.getText() + "2");
             }
-            else if(e.getActionCommand() == "1"){
+            else if(Objects.equals(e.getActionCommand(), "1")){
                 jTextField.setText(jTextField.getText() + "1");
             }
-            else if(e.getActionCommand() == "0"){
+            else if(Objects.equals(e.getActionCommand(), "0")){
                 jTextField.setText(jTextField.getText() + "0");
             }
-            else if(e.getActionCommand() == "+"){
+            else if(Objects.equals(e.getActionCommand(), "+")){
                 jTextField.setText(jTextField.getText() + "+");
             }
-            else if(e.getActionCommand() == "-"){
+            else if(Objects.equals(e.getActionCommand(), "-")){
                 jTextField.setText(jTextField.getText() + "-");
             }
-            else if(e.getActionCommand() == "*"){
+            else if(Objects.equals(e.getActionCommand(), "*")){
                 jTextField.setText(jTextField.getText() + "*");
             }
-            else if(e.getActionCommand() == "/"){
+            else if(Objects.equals(e.getActionCommand(), "/")){
                 jTextField.setText(jTextField.getText() + "/");
             }
-            else if(e.getActionCommand() == "("){
+            else if(Objects.equals(e.getActionCommand(), "(")){
                 jTextField.setText(jTextField.getText() + "(");
             }
-            else if(e.getActionCommand() == ")"){
+            else if(Objects.equals(e.getActionCommand(), ")")){
                 jTextField.setText(jTextField.getText() + ")");
             }
-            else if(e.getActionCommand() == "."){
+            else if(Objects.equals(e.getActionCommand(), ".")){
                 jTextField.setText(jTextField.getText() + ".");
             }
-            else if(e.getActionCommand() == "DEL"){
+            else if(Objects.equals(e.getActionCommand(), "DEL")){
                 jTextField.setText(jTextField.getText().substring(0,jTextField.getText().length() - 1));
             }
-            else if(e.getActionCommand() == "AC"){
+            else if(Objects.equals(e.getActionCommand(), "AC")){
                 jTextField.setText(null);
             }
-            else if(e.getActionCommand() == "="){
+            else if(Objects.equals(e.getActionCommand(), "=")){
                 try{
                     Double answer = Answer(jTextField.getText());
                     jTextField.setText(String.valueOf(answer));
