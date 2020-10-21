@@ -27,7 +27,7 @@ class StudentInformation{
 public class PersonalInformation {
     JFrame jFrame;
     JTextArea jTextArea;
-    JScrollPane jScrollPane;                // 文本区滚动条
+    JScrollPane jScrollPaneText;            // 文本区滚动条
     JPanel jPanelScanner;
     JTextField jTextFieldStuNum;            // 学号
     Boolean aBooleanStuNum;
@@ -35,6 +35,8 @@ public class PersonalInformation {
     Boolean aBooleanName;
     JPasswordField jPasswordField;          // 密码
     Boolean aBooleanPassword;
+    JList jList;                            // 专业列表
+    JScrollPane jScrollPaneList;
     JRadioButton jRadioButtonSexMale;       // 性别男
     JRadioButton jRadioButtonSexFemale;     // 性别女
     ButtonGroup buttonGroupSex;
@@ -56,16 +58,21 @@ public class PersonalInformation {
         jFrame = new JFrame("用户注册");
         jFrame.setLayout(new BorderLayout());
         jTextArea = new JTextArea(5,20);
-        jScrollPane = new JScrollPane(jTextArea);
-        jFrame.add(jScrollPane,BorderLayout.NORTH);
+        jScrollPaneText = new JScrollPane(jTextArea);
+        jFrame.add(jScrollPaneText,BorderLayout.NORTH);
         jPanelScanner = new JPanel();
-        jPanelScanner.setLayout(new GridLayout(6,2));
+        jPanelScanner.setLayout(new GridLayout(7,2));
         jPanelScanner.add(new JLabel(" 学号 "));
         jPanelScanner.add(jTextFieldStuNum = new JTextField(15));
         jPanelScanner.add(new JLabel(" 姓名 "));
         jPanelScanner.add(jTextFieldName = new JTextField(15));
         jPanelScanner.add(new JLabel(" 密码 "));
         jPanelScanner.add(jPasswordField = new JPasswordField(15));
+        String[] Collage = {"计算机科学与技术" , "软件工程" , "网络安全" , "物联网"};
+        jList = new JList(Collage);
+        jScrollPaneList = new JScrollPane(jList);
+        jPanelScanner.add(new JLabel("专业"));
+        jPanelScanner.add(jScrollPaneList);
         jPanelSex = new JPanel();
         jPanelSex.setLayout(new GridLayout(1,2));
         jPanelSex.add(jRadioButtonSexMale = new JRadioButton(" 男 "));
@@ -95,7 +102,7 @@ public class PersonalInformation {
         jPanelButton.add(jButtonDel = new JButton(" 重置 "));
         jFrame.add(jPanelButton,BorderLayout.SOUTH);
 
-        jFrame.setSize(600,400);
+        jFrame.setSize(700,500);
         jFrame.setVisible(true);
         jFrame.setResizable(false);
         jFrame.setDefaultCloseOperation(3);
@@ -114,6 +121,7 @@ public class PersonalInformation {
                 String Num = jTextFieldStuNum.getText();
                 String Name = jTextFieldName.getText();
                 String PassWord = String.valueOf(jPasswordField.getPassword());
+                String collage = (String)jList.getSelectedValue();
                 String Sex;
                 if(jRadioButtonSexMale.isSelected()){
                     Sex = "男";
@@ -131,7 +139,7 @@ public class PersonalInformation {
                 if(jCheckBoxHobby3.isSelected())
                     s.append(jCheckBoxHobby3.getText());
                 Hobby = new String(s);
-                jTextArea.append("姓名:" + Name + " 学号:" + Num + " 密码:" + PassWord + " 性别:" + Sex + " 出生年份:" + Year + " 爱好:" + Hobby + "\r\n");
+                jTextArea.append("姓名: " + Name + " 学号: " + Num + " 密码: " + PassWord + " 专业: " + collage +" 性别: " + Sex + " 出生年份: " + Year + " 爱好: " + Hobby + "\r\n");
                 DEL();
             }
             if(Objects.equals(e.getActionCommand(), " 重置 ")){
@@ -147,6 +155,7 @@ public class PersonalInformation {
         aBooleanStuNum = false;
         jPasswordField.setText(null);
         aBooleanPassword = false;
+        jList.clearSelection();
         jRadioButtonSexMale.setSelected(false);
         jRadioButtonSexFemale.setSelected(false);
         aBooleanSex = false;
