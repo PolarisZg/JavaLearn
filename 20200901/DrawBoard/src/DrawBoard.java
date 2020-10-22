@@ -112,7 +112,7 @@ public class DrawBoard {
                 X1 = e.getX();
                 Y1 = e.getY();
                 if(aBooleanCircle){
-                    Double r = Math.sqrt((X1 - X0) * (X1 - X0) + (Y1 - Y0) * (Y1 - Y0));
+                    double r = Math.sqrt((X1 - X0) * (X1 - X0) + (Y1 - Y0) * (Y1 - Y0));
                     int x = (int)(X0 - r);
                     int y = (int)(Y0 - r);
                     graphics.drawOval(x,y,(int)(2 * r),(int)(2 * r));
