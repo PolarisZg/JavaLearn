@@ -19,6 +19,7 @@ public class PracticeDialog {
 
         jFrame.setSize(400,100);
         jFrame.setDefaultCloseOperation(3);
+        jFrame.setLocationByPlatform(true);
         jFrame.setVisible(true);
         jButton1.addActionListener(new actionPerformed());
         jButton2.addActionListener(new actionPerformed());
