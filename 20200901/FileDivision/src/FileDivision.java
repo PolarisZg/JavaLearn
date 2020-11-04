@@ -17,7 +17,7 @@ public class FileDivision {
         long length = file.length()/Num;
         byte[] b = new byte[1];
         for(long i = 0;fileInputStream.read(b) != -1;i++){
-            fileOutputStreams[(int)(i/length)].write(b);
+            fileOutputStreams[Math.min(Num - 1 , (int)(i/length))].write(b);
         }
         for(int j = 0;j < Num;j++){
             fileOutputStreams[j].close();
@@ -144,7 +144,7 @@ class FileDivisionGui{
         jPanelAnswers.add(jLabelAnswer = new JLabel());
         jFrame.add(jPanelAnswers,BorderLayout.SOUTH);
 
-        jFrame.setSize(400,150);
+        jFrame.setSize(600,150);
         jFrame.setDefaultCloseOperation(3);
         jFrame.setVisible(true);
     }
