@@ -25,10 +25,11 @@ public class JTableTest {
             defaultTableModel.insertRow(row + 1,(Object[]) null);
         });
         (jButtonDelRows = new JButton(" 删除选中行")).addActionListener(e -> {
-            int[] row = jTable.getSelectedRows();
-            //System.out.println(row);
-            for(int i = row.length - 1;i >= 0;i--){
-                defaultTableModel.removeRow(row[i]);
+            if(JOptionPane.showConfirmDialog(null,"是否删除该行") == JOptionPane.OK_OPTION) {
+                int[] row = jTable.getSelectedRows();
+                for (int i = row.length - 1; i >= 0; i--) {
+                    defaultTableModel.removeRow(row[i]);
+                }
             }
         });
         (jButtonAddCols = new JButton("表格最右侧添加列")).addActionListener(e -> defaultTableModel.addColumn(null));
