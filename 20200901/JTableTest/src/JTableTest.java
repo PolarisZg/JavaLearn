@@ -40,7 +40,7 @@ public class JTableTest {
         jFrame.add(jPanelButtons,BorderLayout.SOUTH);
 
         jFrame.setSize(600,500);
-        jFrame.setDefaultCloseOperation(3);
+        jFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         jFrame.setVisible(true);
     }
 
