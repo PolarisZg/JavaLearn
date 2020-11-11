@@ -143,24 +143,26 @@ class AddressBookGui{
         });
         jPanelButtons.add(jButtonDel = new JButton("删除"));
         jButtonDel.addActionListener(e -> {
-            String s = switch (x) {
-                case 0 -> AddressBookF.returnRowData(jTableAll.getSelectedRow(), defaultTableModelAll);
-                case 1 -> AddressBookF.returnRowData(jTableFriend.getSelectedRow(), defaultTableModelFriend);
-                case 2 -> AddressBookF.returnRowData(jTableClassmate.getSelectedRow(), defaultTableModelClassmate);
-                case 3 -> AddressBookF.returnRowData(jTableRelative.getSelectedRow(), defaultTableModelRelative);
-                default -> null;
-            };
-            File file = new File("Temporary");
-            AddressBookF.Save(file,defaultTableModelAll,s);
-            AddressBookF.DelAll(defaultTableModelAll);
-            AddressBookF.DelAll(defaultTableModelFriend);
-            AddressBookF.DelAll(defaultTableModelClassmate);
-            AddressBookF.DelAll(defaultTableModelRelative);
-            AddressBookF.Open(file,defaultTableModelAll,
-                    defaultTableModelFriend,
-                    defaultTableModelClassmate,
-                    defaultTableModelRelative);
-            file.delete();
+            if(JOptionPane.showConfirmDialog(null,"是否删除该行数据") == JOptionPane.OK_OPTION) {
+                String s = switch (x) {
+                    case 0 -> AddressBookF.returnRowData(jTableAll.getSelectedRow(), defaultTableModelAll);
+                    case 1 -> AddressBookF.returnRowData(jTableFriend.getSelectedRow(), defaultTableModelFriend);
+                    case 2 -> AddressBookF.returnRowData(jTableClassmate.getSelectedRow(), defaultTableModelClassmate);
+                    case 3 -> AddressBookF.returnRowData(jTableRelative.getSelectedRow(), defaultTableModelRelative);
+                    default -> null;
+                };
+                File file = new File("Temporary");
+                AddressBookF.Save(file, defaultTableModelAll, s);
+                AddressBookF.DelAll(defaultTableModelAll);
+                AddressBookF.DelAll(defaultTableModelFriend);
+                AddressBookF.DelAll(defaultTableModelClassmate);
+                AddressBookF.DelAll(defaultTableModelRelative);
+                AddressBookF.Open(file, defaultTableModelAll,
+                        defaultTableModelFriend,
+                        defaultTableModelClassmate,
+                        defaultTableModelRelative);
+                file.delete();
+            }
         });
         jFrame.add(jPanelButtons,BorderLayout.SOUTH);
         (jPanelInput = new JPanel()).setLayout(new GridLayout(1,8));
