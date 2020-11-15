@@ -35,7 +35,7 @@ class BoilerDataGui{
             (new Thread(() -> {
                 while(aBooleanWork) {
                     try {
-                        Thread.sleep(2000);
+                        Thread.sleep(20000);
                     } catch (InterruptedException i) {
                         i.printStackTrace();
                     }
@@ -45,7 +45,7 @@ class BoilerDataGui{
             (new Thread(() -> {
                 while (aBooleanWork) {
                     try {
-                        Thread.sleep(3000);
+                        Thread.sleep(30000);
                     } catch (InterruptedException i) {
                         i.printStackTrace();
                     }
