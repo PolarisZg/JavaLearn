@@ -66,7 +66,7 @@ class Producer implements Runnable {
     public void run() {
         while (true) {
             if (goods.Num == 0) {
-                int num = 20;                               // 每次的进货量
+                int num = 100;                               // 每次的进货量
                 goods.Num = goods.Num + num;
                 System.out.println("进货 " + num + " 件商品，库存 " + goods.Num + " 个");
                 synchronized (goods) {
