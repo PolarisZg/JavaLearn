@@ -7,6 +7,9 @@ public class Sale {
         Thread threadProducer = new Thread(producer);
         threadConsumer.start();
         threadProducer.start();
+        byte[] b;
+        String s = "abc";
+        b = s.getBytes();
     }
 }
 
