@@ -58,7 +58,7 @@ class ChatClientWithGui_Gui {
         try {
             InetAddress inetAddress = InetAddress.getByName("localhost");
             socket = new Socket(inetAddress, SERVER_PORT);
-            jTextAreaInput.append("客户端已启动" + "\r\n");
+            jTextAreaScreen.append("客户端已启动" + "\r\n");
             byte[] b = new byte[1024];
             int length;
             while ((length = socket.getInputStream().read(b)) != -1) {
