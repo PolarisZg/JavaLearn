@@ -8,6 +8,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.Scanner;
 
 public class ChatServerWithoutGui {
 
@@ -23,15 +24,38 @@ public class ChatServerWithoutGui {
             System.out.println("服务器已启动，等待客户端");
             socket = serverSocket.accept();
             System.out.println("已连接");
+            System.out.println("输入文字 , 按回车发送");
             outputStream = socket.getOutputStream();
             inputStream = socket.getInputStream();
-            outputStream.write("来自服务器的一句话".getBytes());
-            int length;
-            byte[] b = new byte[1024];
-            length = inputStream.read(b);
-            System.out.println("客户端 : -->" + new String(b, 0, length));
+            Thread threadIn = new Thread(() -> {
+                int length = 0;
+                byte[] b = new byte[1024];
+                while (true) {
+                    try {
+                        if ((length = inputStream.read(b)) == -1) break;
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                        System.out.println("客户端停止运行 , 请启动客户端 \n 本程序已停止");
+                        System.exit(0);
+                    }
+                    System.out.println("客户端 : -->" + new String(b, 0, length));
+                }
+            });
+            Thread threadOut = new Thread(() -> {
+                while (true){
+                    try {
+                        outputStream.write(new Scanner(System.in).nextLine().getBytes());
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            });
+            threadIn.start();
+            threadOut.start();
         } catch (IOException e) {
             e.printStackTrace();
+            System.out.println("客户端停止运行 , 请启动客户端");
+            System.exit(0);
         }
     }
 
