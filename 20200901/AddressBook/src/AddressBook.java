@@ -24,7 +24,8 @@
 * * 获取所选行的数据，把所有数据导入一个文件中，写入时剔除所选行的数据，清空所有表格，把刚才文件中的数据再写入程序
 *
 * 树 分类功能的实现
-* * 表格所在区域为卡片布局，点击结点显示相应的卡片*/
+* * 表格所在区域为卡片布局，点击结点显示相应的卡片
+*/
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.tree.DefaultMutableTreeNode;
