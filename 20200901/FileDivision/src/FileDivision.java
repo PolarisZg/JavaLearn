@@ -6,20 +6,20 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class FileDivision {
-    static void Division(File file,int Num,String Location) throws IOException {
+    static void Division(File file, String Location) throws IOException {
         FileInputStream fileInputStream = new FileInputStream(file);
-        FileOutputStream[] fileOutputStreams = new FileOutputStream[Num];
-        File[] files = new File[Num];
-        for(int i = 0;i < Num;i++){
+        FileOutputStream[] fileOutputStreams = new FileOutputStream[2];
+        File[] files = new File[2];
+        for(int i = 0; i < 2; i++){
             files[i] = new File(Location + "/Answer" + i + ".txt");
             fileOutputStreams[i] = new FileOutputStream(files[i]);
         }
-        long length = file.length()/Num;
+        long length = file.length()/ 2;
         byte[] b = new byte[1];
         for(long i = 0;fileInputStream.read(b) != -1;i++){
-            fileOutputStreams[Math.min(Num - 1 , (int)(i/length))].write(b);
+            fileOutputStreams[Math.min(2 - 1 , (int)(i/length))].write(b);
         }
-        for(int j = 0;j < Num;j++){
+        for(int j = 0; j < 2; j++){
             fileOutputStreams[j].close();
         }
         fileInputStream.close();
@@ -127,7 +127,7 @@ class FileDivisionGui{
             }
             if(card == 1){
                 try {
-                    FileDivision.Division(file0,2,Location);
+                    FileDivision.Division(file0, Location);
                 } catch (IOException ioException) {
                     ioException.printStackTrace();
                 }
