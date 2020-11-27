@@ -959,15 +959,7 @@ SELECT|sys.sys_config:null
       <Position>2</Position>
       <DataType>varchar(10)|0s</DataType>
     </column>
-    <column id="297" parent="288" name="出生日期">
-      <Position>3</Position>
-      <DataType>date|0s</DataType>
-    </column>
-    <column id="298" parent="288" name="平均成绩">
-      <Position>4</Position>
-      <DataType>double(5,3 digit)|0s</DataType>
-    </column>
-    <key id="299" parent="288" name="PRIMARY">
+    <key id="297" parent="288" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>姓名</ColNames>
       <Primary>1</Primary>
