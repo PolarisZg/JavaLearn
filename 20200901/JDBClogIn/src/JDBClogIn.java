@@ -1,3 +1,8 @@
+/*
+* 数据库中表格名 user
+* 存放用户名 user
+* 存放密码 password
+* */
 import javax.swing.*;
 import java.awt.*;
 import java.sql.*;
