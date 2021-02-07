@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/20200901.iml" filepath="$PROJECT_DIR$/.idea/20200901.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AddressBook/AddressBook.iml" filepath="$PROJECT_DIR$/AddressBook/AddressBook.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BoilerData/BoilerData.iml" filepath="$PROJECT_DIR$/BoilerData/BoilerData.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Boor/Boor.iml" filepath="$PROJECT_DIR$/Boor/Boor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ButtonOK/ButtonOK.iml" filepath="$PROJECT_DIR$/ButtonOK/ButtonOK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ByteStreamPractice/ByteStreamPractice.iml" filepath="$PROJECT_DIR$/ByteStreamPractice/ByteStreamPractice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Calculate/Calculate.iml" filepath="$PROJECT_DIR$/Calculate/Calculate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CalculateMachine/CalculateMachine.iml" filepath="$PROJECT_DIR$/CalculateMachine/CalculateMachine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ChatClientWithGui/ChatClientWithGui.iml" filepath="$PROJECT_DIR$/ChatClientWithGui/ChatClientWithGui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ChatClientWithoutGui/ChatClientWithoutGui.iml" filepath="$PROJECT_DIR$/ChatClientWithoutGui/ChatClientWithoutGui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ChatServerWithGui/ChatServerWithGui.iml" filepath="$PROJECT_DIR$/ChatServerWithGui/ChatServerWithGui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ChatServerWithoutGui/ChatServerWithoutGui.iml" filepath="$PROJECT_DIR$/ChatServerWithoutGui/ChatServerWithoutGui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ClubRegistration/ClubRegistration.iml" filepath="$PROJECT_DIR$/ClubRegistration/ClubRegistration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DaoShu/DaoShu.iml" filepath="$PROJECT_DIR$/DaoShu/DaoShu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DataType/DataType.iml" filepath="$PROJECT_DIR$/DataType/DataType.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DrawBoard/DrawBoard.iml" filepath="$PROJECT_DIR$/DrawBoard/DrawBoard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DrawBoardMenu/DrawBoardMenu.iml" filepath="$PROJECT_DIR$/DrawBoardMenu/DrawBoardMenu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FileDivision/FileDivision.iml" filepath="$PROJECT_DIR$/FileDivision/FileDivision.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Gui/Gui.iml" filepath="$PROJECT_DIR$/Gui/Gui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HelloWorldApp/HelloWorldApp.iml" filepath="$PROJECT_DIR$/HelloWorldApp/HelloWorldApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JDBCAddressBook/JDBCAddressBook.iml" filepath="$PROJECT_DIR$/JDBCAddressBook/JDBCAddressBook.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JDBCStudentTable/JDBCStudentTable.iml" filepath="$PROJECT_DIR$/JDBCStudentTable/JDBCStudentTable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JDBClogIn/JDBClogIn.iml" filepath="$PROJECT_DIR$/JDBClogIn/JDBClogIn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JTableTest/JTableTest.iml" filepath="$PROJECT_DIR$/JTableTest/JTableTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JTreeTest/JTreeTest.iml" filepath="$PROJECT_DIR$/JTreeTest/JTreeTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LessonManageVector/LessonManageVector.iml" filepath="$PROJECT_DIR$/LessonManageVector/LessonManageVector.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LessonsManage/LessonsManage.iml" filepath="$PROJECT_DIR$/LessonsManage/LessonsManage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LoadGui/LoadGui.iml" filepath="$PROJECT_DIR$/LoadGui/LoadGui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NoteBookMachine/NoteBookMachine.iml" filepath="$PROJECT_DIR$/NoteBookMachine/NoteBookMachine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PRE/PRE.iml" filepath="$PROJECT_DIR$/PRE/PRE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PersonalInformation/PersonalInformation.iml" filepath="$PROJECT_DIR$/PersonalInformation/PersonalInformation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PracticeDialog/PracticeDialog.iml" filepath="$PROJECT_DIR$/PracticeDialog/PracticeDialog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sale/Sale.iml" filepath="$PROJECT_DIR$/Sale/Sale.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Score/Score.iml" filepath="$PROJECT_DIR$/Score/Score.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StudentException/StudentException.iml" filepath="$PROJECT_DIR$/StudentException/StudentException.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StudentInformainDateStream/StudentInformainDateStream.iml" filepath="$PROJECT_DIR$/StudentInformainDateStream/StudentInformainDateStream.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StudentInformationBuffer/StudentInformationBuffer.iml" filepath="$PROJECT_DIR$/StudentInformationBuffer/StudentInformationBuffer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StudentInformationObjectStream/StudentInformationObjectStream.iml" filepath="$PROJECT_DIR$/StudentInformationObjectStream/StudentInformationObjectStream.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ThreadLevel/ThreadLevel.iml" filepath="$PROJECT_DIR$/ThreadLevel/ThreadLevel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ThreadPractice/ThreadPractice.iml" filepath="$PROJECT_DIR$/ThreadPractice/ThreadPractice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TimeWatch/TimeWatch.iml" filepath="$PROJECT_DIR$/TimeWatch/TimeWatch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TongXunLu/TongXunLu.iml" filepath="$PROJECT_DIR$/TongXunLu/TongXunLu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Triangle/Triangle.iml" filepath="$PROJECT_DIR$/Triangle/Triangle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WhiteBoardGui/WhiteBoardGui.iml" filepath="$PROJECT_DIR$/WhiteBoardGui/WhiteBoardGui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/useJDBC/useJDBC.iml" filepath="$PROJECT_DIR$/useJDBC/useJDBC.iml" />
+    </modules>
+  </component>
+</project>
