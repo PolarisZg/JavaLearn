@@ -43,12 +43,3 @@ class BenJin extends Loan{
     }
 }
 
-class BenXi extends Loan{
-    BenXi(double Principal , int Num , double rate){
-        principal = Principal;
-        yearNum = Num;
-        repayment = new double[Num];
-
-    }
-}
-
